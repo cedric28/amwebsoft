@@ -85,7 +85,7 @@ function Index() {
                                     </div>
                                 </div>
                             </div>
-                            {/* <div className="col-lg-12">
+                            <div className="col-lg-12">
                             
                                 <div id="js-loadMore-mosaic" className="cbp-l-loadMore-button ">
                                     <a href="load-more.html" className="cbp-l-loadMore-link button py-1 button gradient-btn whitecolor transition-3" rel="nofollow">
@@ -94,7 +94,7 @@ function Index() {
                                         <span className="cbp-l-loadMore-noMoreLoading d-none">NO MORE WORKS</span>
                                     </a>
                                 </div>
-                            </div> */}
+                            </div>
                         </div>
                     </div>
                 </div>
