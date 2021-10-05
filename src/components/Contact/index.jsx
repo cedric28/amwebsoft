@@ -1,9 +1,8 @@
 import React,{ useState, useEffect } from "react";
 import PageHeader from "./PageHeader";
-import { useTitle } from "../Common/customHooks";
+import { Helmet } from 'react-helmet';
 
 function Index() {
-    useTitle("Contact Us");
     const [loading, setLoading] = useState(false);
     const username = useFormInput("");
     const email = useFormInput("");
@@ -31,6 +30,9 @@ function Index() {
     }
     return (
         <div>
+            <Helmet>
+                <title>Contact Us</title>
+            </Helmet>
             <PageHeader />
             <section id="stayconnect1" className="bglight position-relative padding noshadow">
                 <div className="container whitebox">

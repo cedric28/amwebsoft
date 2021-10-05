@@ -1,13 +1,16 @@
 import React from "react";
+import { Helmet } from 'react-helmet';
 import PageHeader from "./PageHeader";
 import Footer from "../Footer";
 import HeaderWhite from "../Common/HeaderWhite"
-import { useTitle } from "../Common/customHooks";
+
 
 function Index() {
-    useTitle("Not Found");
     return (
         <div>
+            <Helmet>
+                <title>Not Found</title>
+            </Helmet>
             <HeaderWhite />
             <PageHeader />
             <section id="error" class="padding">

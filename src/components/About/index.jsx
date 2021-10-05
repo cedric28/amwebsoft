@@ -1,11 +1,13 @@
 import React from "react";
 import PageHeader from "./PageHeader";
-import { useTitle } from "../Common/customHooks";
+import { Helmet } from 'react-helmet';
 
 const Index = (props) => {
-    useTitle("About Us")
   return (
     <div>
+        <Helmet>
+            <title>About Us</title>
+        </Helmet>
       <PageHeader />
       <section id="aboutus" className="padding_top padding_bottom">
         <div className="container aboutus">

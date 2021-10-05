@@ -1,13 +1,15 @@
 import React from "react";
+import { Helmet } from 'react-helmet';
 import PageHeader from "./PageHeader";
 import SomeServices from "./SomeServices";
 import OurServices from "./OurServices";
-import { useTitle } from "../Common/customHooks";
 
 const Index = (props) => {
-    useTitle("Home");
   return (
     <div>
+        <Helmet>
+            <title>Home</title>
+        </Helmet>
         <PageHeader/>
         <SomeServices/>
         <section id="our-feature" className="single-feature padding_bottom padding_top_half mt-1 mt-lg-n4 mt-md-n3">

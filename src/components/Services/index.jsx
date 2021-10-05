@@ -1,11 +1,13 @@
 import React from "react";
+import { Helmet } from 'react-helmet';
 import PageHeader from "./PageHeader";
-import { useTitle } from "../Common/customHooks";
 
 function Index() {
-    useTitle("Our Services")
   return (
     <div>
+        <Helmet>
+            <title>Our Services</title>
+        </Helmet>
         <PageHeader />
         <section id="our-services" className="padding bglight">
             <div className="container">

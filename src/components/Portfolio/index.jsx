@@ -1,12 +1,13 @@
 import React from "react";
+import { Helmet } from 'react-helmet';
 import PageHeader from "./PageHeader";
-import { useTitle } from "../Common/customHooks";
 
 function Index() {
-    useTitle("Portfolio");
-    
     return (
         <div>
+            <Helmet>
+                <title>Portfolio</title>
+            </Helmet>
         <PageHeader />
             <section id="gallery" className="bglight position-relative padding_top">
                 <div className="container">
