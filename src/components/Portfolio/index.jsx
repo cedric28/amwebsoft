@@ -1,7 +1,10 @@
 import React from "react";
 import PageHeader from "./PageHeader";
+import { useTitle } from "../Common/customHooks";
 
 function Index() {
+    useTitle("Portfolio");
+    
     return (
         <div>
         <PageHeader />

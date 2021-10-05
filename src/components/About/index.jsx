@@ -1,6 +1,9 @@
 import React from "react";
 import PageHeader from "./PageHeader";
+import { useTitle } from "../Common/customHooks";
+
 const Index = (props) => {
+    useTitle("About Us")
   return (
     <div>
       <PageHeader />

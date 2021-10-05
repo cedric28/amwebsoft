@@ -2,8 +2,10 @@ import React from "react";
 import PageHeader from "./PageHeader";
 import SomeServices from "./SomeServices";
 import OurServices from "./OurServices";
+import { useTitle } from "../Common/customHooks";
 
 const Index = (props) => {
+    useTitle("Home");
   return (
     <div>
         <PageHeader/>

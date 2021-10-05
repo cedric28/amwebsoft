@@ -1,8 +1,9 @@
-import React,{ useState } from "react";
+import React,{ useState, useEffect } from "react";
 import PageHeader from "./PageHeader";
+import { useTitle } from "../Common/customHooks";
 
 function Index() {
-
+    useTitle("Contact Us");
     const [loading, setLoading] = useState(false);
     const username = useFormInput("");
     const email = useFormInput("");
