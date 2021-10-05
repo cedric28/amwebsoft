@@ -9,6 +9,8 @@ const Index = (props) => {
     <div>
         <Helmet>
             <title>Home</title>
+            <meta name="description" content="descrition" />
+            {/* <link rel="canonical" href="https://malikgabroun.com" /> */}
         </Helmet>
         <PageHeader/>
         <SomeServices/>
